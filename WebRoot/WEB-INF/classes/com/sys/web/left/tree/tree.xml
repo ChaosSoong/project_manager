@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root name="在线考试系统">
+	<manager name="用户管理" type="0">
+		<link href="./sys_jsp/admin/admin_add.jsp" name="添加用户" type="0" />
+		<link href="./sys_jsp/admin/admin_query.jsp" name="管理用户" type="0" />
+	</manager>
+	<manager name="个人信息管理" type="1">
+		<link href="admin/admin_changePwd.do" name="修改密码" type="0" />
+		<link href="admin/admin_modify.do?type=2" name="修改个人信息" type="0" />
+	</manager>
+	<manager name="普通用户管理" type="1">
+		<link href="./sys_jsp/admin/admin_add.jsp" name="添加普通用户" type="0" />
+		<link href="./sys_jsp/admin/admin_query2.jsp" name="管理普通用户" type="0" />
+	</manager>
+	<manager name="项目信息管理" type="1">
+		<link href="./pro_jsp/pro/pro_query.jsp" name="查看项目" type="0" />
+	</manager>
+	<manager name="常用资料管理" type="1">
+		<link href="./pro_jsp/file/upload_normal.jsp" name="上传资料" type="0" />
+		<link href="./sys_jsp/file/file_query.jsp" name="查询资料" type="0" />
+	</manager>
+	<manager name="通知公告管理" type="1">
+		<link href="./pro_jsp/note/note_add.jsp" name="添加通知公告" type="0" />
+		<link href="./pro_jsp/note/note_query.jsp" name="查询通知公告" type="0" />
+	</manager>
+	<manager name="会议信息管理" type="1">
+		<link href="./pro_jsp/meet/meet_queryNoPost.jsp" name="发布会议信息" type="0" />
+		<link href="./pro_jsp/meet/meet_query.jsp" name="查看会议信息" type="0" />
+	</manager>
+	<manager name="统计管理" type="1">
+		<link href="./pro_jsp/thesis/thesis_report.jsp" name="论文信息统计" type="0" />
+		<link href="./pro_jsp/pro/pro_report.jsp" name="项目信息统计" type="0" />
+	</manager>
+	<manager name="站内信" type="1">
+		<link href="./sys_jsp/admin/admin_sendMsg.jsp" name="发送站内信" type="0" />
+	</manager>
+	<manager name="个人信息管理" type="2">
+		<link href="admin/admin_changePwd.do" name="修改密码" type="0" />
+		<link href="admin/admin_modify.do?type=2" name="修改个人信息" type="0" />
+	</manager>
+	<manager name="项目信息管理" type="2">
+		<link href="./pro_jsp/pro/pro_add.jsp" name="项目申报" type="0" />
+		<link href="./pro_jsp/pro/pro_query.jsp" name="查看项目" type="0" />
+	</manager>
+	<manager name="论文信息管理" type="2">
+		<link href="./pro_jsp/thesis/thesis_add.jsp" name="添加论文信息" type="0" />
+		<link href="./pro_jsp/thesis/thesis_query.jsp" name="管理论文信息" type="0" />
+	</manager>
+	<manager name="常用资料下载" type="2">
+		<link href="./sys_jsp/file/file_query.jsp" name="点击查询资料" type="0" />
+	</manager>
+	<manager name="会议信息管理" type="2">
+		<link href="./pro_jsp/meet/meet_add.jsp" name="提供会议信息" type="0" />
+		<link href="./pro_jsp/meet/meet_queryPost.jsp" name="查看会议信息" type="0" />
+	</manager>
+	<manager name="站内信" type="2">
+		<link href="./sys_jsp/admin/admin_queryMsg.jsp" name="查看站内信" type="0" />
+	</manager>
+</root>

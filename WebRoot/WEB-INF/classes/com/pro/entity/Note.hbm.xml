@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="t_note" name="com.pro.entity.Note">
+    <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="native" />
+    </id>
+    <property name="title" access="field" length="140" type="java.lang.String"/>
+    <property name="content" access="field" length="1400" type="java.lang.String"/>
+  	<property name="postDate" access="field" length="80" type="java.lang.String"/>
+  </class>
+</hibernate-mapping>

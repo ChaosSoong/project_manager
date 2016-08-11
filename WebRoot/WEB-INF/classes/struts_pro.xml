@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 默认的视图主题 -->
+    <constant name="struts.ui.theme" value="simple" />
+
+	 <constant name="struts.objectFactory" value="spring" />
+	 <constant name="struts.i18n.encoding" value="utf-8" />  
+	 <constant name="struts.action.extension" value="do"/>
+	 <constant name="struts.devMode" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	 <package name="subject" namespace="/subject" extends="struts-default">
+		<action name="subject_*" class="subjectAction" method="{1}">
+			<result name="success">/sys_jsp/success.jsp</result>
+			<result name="error">/sys_jsp/error.jsp</result>
+			<result name="query">/exam_jsp/subject/subject_{1}.jsp</result>
+		</action>
+	</package>
+	<package name="note" namespace="/note" extends="struts-default">
+		<action name="note_*" class="noteAction" method="{1}">
+			<result name="success">/sys_jsp/success.jsp</result>
+			<result name="close">/sys_jsp/selfClose.jsp</result>
+			<result name="error">/sys_jsp/error.jsp</result>
+			<result name="toAdd">/pro_jsp/note/note_{1}.jsp</result>
+			<result name="query">/pro_jsp/note/note_query.jsp</result>
+			<result name="detail">/pro_jsp/note/note_detail.jsp</result>
+		</action>
+	</package>
+	
+	<package name="meet" namespace="/meet" extends="struts-default">
+		<action name="meet_*" class="meetingAction" method="{1}">
+			<result name="success">/sys_jsp/success.jsp</result>
+			<result name="close">/sys_jsp/selfClose.jsp</result>
+			<result name="error">/sys_jsp/error.jsp</result>
+			<result name="toAdd">/pro_jsp/meet/meet_{1}.jsp</result>
+			<result name="query">/pro_jsp/meet/meet_query.jsp</result>
+			<result name="detail">/pro_jsp/meet/meet_detail.jsp</result>
+		</action>
+	</package>
+	
+	<package name="thesis" namespace="/thesis" extends="struts-default">
+		<action name="thesis_*" class="thesisAction" method="{1}">
+			<result name="success">/sys_jsp/success.jsp</result>
+			<result name="close">/sys_jsp/selfClose.jsp</result>
+			<result name="error">/sys_jsp/error.jsp</result>
+			<result name="toAdd">/pro_jsp/thesis/thesis_{1}.jsp</result>
+			<result name="query">/pro_jsp/thesis/thesis_query.jsp</result>
+			<result name="detail">/pro_jsp/thesis/thesis_detail.jsp</result>
+		</action>
+	</package>
+	
+	<package name="pro" namespace="/pro" extends="struts-default">
+		<action name="pro_*" class="projectAction" method="{1}">
+			<result name="success">/sys_jsp/success.jsp</result>
+			<result name="close">/sys_jsp/selfClose.jsp</result>
+			<result name="error">/sys_jsp/error.jsp</result>
+			<result name="toAdd">/pro_jsp/pro/pro_{1}.jsp</result>
+			<result name="query">/pro_jsp/pro/pro_query.jsp</result>
+			<result name="detail">/pro_jsp/pro/pro_detail.jsp</result>
+		</action>
+	</package>
+</struts>
